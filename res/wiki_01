@@ -1,6 +1,7 @@
 <?xml version="1.0" ?> <class> 
 
 <doc id="7702780" url="https://en.wikipedia.org/wiki?curid=7702780" title="Source routing">
+word2d word2d DELETEWORD
 Source routing
 In computer networking source routing also called path addressing allows a sender of a packet to partially or completely specify the route the packet takes through the network In contrast in conventional routing routers in the network determine the path incrementally based on the packets destination Another routing alternative label switching is used in connectionoriented networks such as X25 frame relay ATM and MPLS
 

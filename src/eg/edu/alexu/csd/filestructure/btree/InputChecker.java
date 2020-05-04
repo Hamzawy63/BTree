@@ -5,4 +5,9 @@ public class InputChecker {
         for (Object o : input)
             if (o == null) LocalException.throwRunTimeErrorException();
     }
+    static void checkEmptyString(String ...input) {
+        for(String s : input) {
+            if(s.isEmpty()) LocalException.throwRunTimeErrorException();
+        }
+    }
 }

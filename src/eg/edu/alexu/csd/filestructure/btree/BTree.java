@@ -214,7 +214,6 @@ public class BTree<K extends Comparable<K>, V> implements IBTree<K, V> {
         IBTreeNode<K, V> target = parent.getChildren().get(idx);
         IBTreeNode<K, V> newNode = new BTreeNode<>();
         newNode.setLeaf(target.isLeaf());
-
         /*
         Fill the new node
          */
@@ -239,8 +238,6 @@ public class BTree<K extends Comparable<K>, V> implements IBTree<K, V> {
         target.setKeys(newTargetKeys);
         target.setValues(newTargetValues);
         target.setNumOfKeys(keys.size());
-
-
         if (!newNode.isLeaf()) {
             List<IBTreeNode<K, V>> children = new ArrayList<>();
             List<IBTreeNode<K, V>> newTargetChildren = new ArrayList<>();
@@ -251,8 +248,6 @@ public class BTree<K extends Comparable<K>, V> implements IBTree<K, V> {
             target.setChildren(newTargetChildren);
             newNode.setChildren(children);
         }
-
-
         /*
         Shift parent nodes so that we make the median place ready for the median element
          */
